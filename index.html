@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!-- https://cdnjs.com/libraries/axios -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="index.js" ></script>
+    </head>
+    <body>
+        <div>Employees</div>
+        <div id="student-list">
+        </div>
+        <div id="add-student">
+            <form>
+                <label>Add Employee-></label>
+                <label>Name:</label>
+                <input id="name" type="text">
+                <label>Profession:</label>
+                <input id="profession" type="text">
+            </form>
+            <button onclick="createEmployee()">Create Employee</button>
+        </div>
+        <div id="update-student">
+            <form>
+                <label>Update Employee -></label>
+                <label>ID:</label>
+                <input id="id-update" type="text">
+                <label>Field:</label>
+                <input id="field" type="text">
+                <label>Value:</label>
+                <input id="value" type="text">
+            </form>
+            <button onclick="updateEmployee()">Update Employee</button>
+        </div>
+        <div id="delete-student">
+            <form>
+                <form>
+                    <label>Delete Employees-></label>
+                    <label>ID:</label>
+                    <input id="id-delete" type="text">
+                </form>
+                <button onclick="deleteEmployee()">Delete Employee</button>
+            </form>
+        </div>
+    </body>
+</html>
